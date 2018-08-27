@@ -1,0 +1,370 @@
+/*------------------------------------------------------------
+    VIDEO AND OVERLAY STYLING
+-------------------------------------------------------------*/
+.video
+{
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+#embedded_video 
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:   black;
+}
+.overlay_information
+{
+    position: fixed;
+    color: white;
+    background-color: green;
+    opacity: .2;
+    font-size: 15px;
+    display: block;
+    right: 2%;
+    bottom: 5%;
+}
+.overlay_information:hover
+{
+    opacity: 1;
+}
+.compass_information
+{
+    position: fixed;
+    color: white;
+    background-color: green;
+    opacity: .2;
+    font-size: 15px;
+    display: block;
+    left: 2%;
+    bottom: 5%;
+}
+.compass_information:hover
+{
+    opacity: 1;
+}
+.zippermast_control
+{
+    position: fixed;
+    color: white;
+    font-size: 15px;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    opacity: .2;
+}
+.zippermast_control:hover
+{
+    opacity: 1;
+}
+.battery_information
+{
+    position: fixed;
+    color: white;
+    font-size: 15px;
+    top: 1%;
+    left: 1%;
+    transform: translate(-1%, -1%);
+    opacity: .2;
+}
+.battery_information:hover
+{
+    opacity: 1;
+}
+#zm_down
+{
+    width: 90px;
+}
+#zm_up
+{
+    width: 90px;
+}
+#recording_notification
+{
+    position: fixed;
+    color: red;
+    font-size: 25px;
+    top: 15%;
+    left: 5%;
+    transform: translate(-5%, 15%);
+    display: none;
+}
+/*------------------------------------------------------------
+    LEFT DIV STYLING
+-------------------------------------------------------------*/
+.top_div
+{
+    position: fixed;
+    display: block;
+    top: 50%;
+    left: 2%;
+    transform: translate(-2%, -50%);
+}
+.system_div
+{
+    border-style: solid;
+    border-color: grey;
+    background-color: blue;
+    opacity: .2;
+
+    color: white;
+    text-align: center;
+    height: 75px;
+    width: 150px;
+}
+.system_div:hover
+{
+    opacity: 1;
+}
+.camera_mode_div
+{
+    border-style: solid;
+    border-color: grey;
+    background-color: blue;
+    opacity: .2;
+    color: white;
+    text-align: center;
+    height: 75px;
+    width: 150px;
+}
+.camera_mode_div:hover
+{
+    opacity: 1;
+}
+.record_div
+{
+    border-style: solid;
+    border-color: grey;
+    background-color: blue;
+    opacity: .2;
+    color: white;
+    text-align: center;
+    height: 75px;
+    width: 150px;
+}
+.record_div:hover
+{
+    opacity: 1;
+}
+.focus_div
+{
+    border-style: solid;
+    border-color: grey;
+    background-color: blue;
+    opacity: .2;
+    color: white;
+    text-align: center;
+    height: 75px;
+    width: 150px;
+}
+.focus_div:hover
+{
+    opacity: 1;
+}
+#btn_eo
+{
+    width: 60px;
+}
+#btn_ir
+{
+    width: 60px;
+}
+#btn_shutdown
+{
+    width: 90px;
+}
+#btn_restart
+{
+    width: 90px;
+}
+#record_img  
+{
+    width:  40px;
+    height: 40px;
+}
+#record_img:hover
+{
+    background-color: lightblue;
+}
+#stop_img  
+{
+    width:  40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#stop_img:hover
+{
+    background-color: lightblue;
+}
+#btn_sub_focus
+{
+    width: 30px;
+    font-size: 16;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+#btn_add_focus
+{
+    width: 30px;
+    font-size: 16;
+}
+#btn_auto_focus
+{
+    width: 60px;
+}
+/*------------------------------------------------------------
+    RIGHT DIV STYLING
+-------------------------------------------------------------*/
+.bottom_div
+{
+    position: fixed;
+    display: block;
+    top: 50%;
+    right: 2%;
+    transform: translate(2%, -50%);
+}
+.camera_control_div
+{
+    border-style: solid;
+    border-color: grey;
+    background-color: blue;
+    opacity: .2;
+    color: white;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+}
+.camera_control_div:hover
+{
+    opacity: 1;
+}
+.zoom_div
+{
+    border-style: solid;
+    border-color: grey;
+    background-color: blue;
+    opacity: .2;
+    color: white;
+    text-align: center;
+    height: 90px;
+    width: 150px;
+}
+.zoom_div:hover
+{
+    opacity: 1;
+}
+.slew_div
+{
+    border-style: solid;
+    border-color: grey;
+    background-color: blue;
+    opacity: .2;
+    color: white;
+    text-align: center;
+    height: 90px;
+    width: 150px;
+}
+.slew_div:hover
+{
+    opacity: 1;
+}
+#inner_left_img
+{
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    top: 75px;
+    left: 58px;
+}
+#inner_right_img 
+{
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    top: 75px;
+    left: 92px;
+}
+#inner_up_img 
+{
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    top: 65px;
+    left: 75px;
+}
+#inner_down_img 
+{
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    top: 85px;
+    left: 75px;
+}
+#outer_left_img
+{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 68px;
+    left: 25px;
+}
+#outer_right_img
+{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 68px;
+    left: 112px;
+}
+#outer_up_img
+{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    left: 68px;
+}
+#outer_down_img
+{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 105px;
+    left: 68px;
+}
+#btn_reset_zoom
+{
+    width: 60px;
+}
+#btn_reset_slew
+{
+    width: 60px;
+    margin-top: 5px;
+}
+#btn_add_zoom
+{
+    width: 30px;
+    font-size: 16;
+}
+#btn_sub_zoom
+{
+    width: 30px;
+    font-size: 16;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#txt_az
+{
+    width: 50px;
+}
+#txt_el
+{
+    width: 50px;
+}

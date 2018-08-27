@@ -1,0 +1,26 @@
+<html>
+    <head>
+      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+      <meta content="utf-8" http-equiv="encoding">
+      <title>Thrud Recorded Streams</title>
+      <link rel="stylesheet" href="./css/recording.css" type="text/css">
+      <link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
+    </head>
+    <body>
+        <select id="streams">
+            <option value="select_stream">Select A Stream</option>
+        </select>
+
+        <button type="play" onclick="play_video()">Play Stream</button>
+        <button type="download" onclick="download_video()">Download</button>
+
+        <br>
+
+        <video id="embedded_video" src="" type="video/mp4" autoplay controls=true></video>
+
+    </body>
+    <script src="./client_js/socket.io.js"></script>
+    <script src="./client_js/jquery.min.js"></script>
+
+    <script src="./client_js/recording_page.js"></script>
+</html>

@@ -1,0 +1,42 @@
+{
+  "relays": {
+    "zipmast_wake": 3, 
+    "zipbox_relay": 1, 
+    "zipmast_relay": 1, 
+    "zipbatt_relay": 2, 
+    "iridium_relay": 4, 
+    "camera_relay": 4, 
+    "pnnl_relay": 2, 
+    "comms_relay": 3
+  }, 
+  "network": {
+    "zipbox": "192.168.4.207", 
+    "tester": "192.168.4.201", 
+    "pnnl": "192.168.4.206", 
+    "master": "192.168.4.208", 
+    "operator": "192.168.4.205", 
+    "comm": "192.168.4.11"
+  }, 
+  "ports": {
+    "rv": 8080, 
+    "thor": 5432
+  },
+  "iridium": {
+    "rtscts": 1,
+    "dsrdtr": 0,
+    "baudrate": 19200,
+    "port": "/dev/iridium"
+  },
+  "ibps": {
+    "rtscts": 1,
+    "dsrdtr": 0,
+    "baudrate": 19200,
+    "port": "/dev/ibps"
+  },
+  "gps": {
+    "rtscts": 0,
+    "dsrdtr": 0,
+    "baudrate": 9600,
+    "port": "/dev/gps"
+  }
+}

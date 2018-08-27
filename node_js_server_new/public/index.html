@@ -1,0 +1,108 @@
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Thrud</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
+</head>
+<body bgcolor="#000000">
+    
+  <div class="video">
+    <video id="embedded_video" src="" type="video/mp4" autoplay></video>
+    <div class="overlay_information">
+      <div id="serial_waiting">serial waiting</div>
+      <div id="time">time</div>
+      <div id="date">date</div>
+      <div id="set_location">location</div>
+      <div id="speed">speed</div>
+      <div id="altitude">altitude</div>
+      <div id="satellites">satellites</div>
+    </div>
+    <div class="compass_information">
+      <div id="heading">Heading</div>
+      <div id="pitch">Pitch</div>
+      <div id="roll">roll</div>
+      <div id="temp">temp</div>
+    </div>
+    <div class="battery_information">
+      BATTERY: <br>
+      <div id="mins_to_empty">Mins to Empty</div>
+      <div id="percent_left">percent left</div>
+    </div>
+    <div class="top_div">
+      <div class="system_div">
+        SYSTEM: <br>
+        <button onclick="shutdown_click()" id="btn_shutdown">SHUTDOWN</button><br>
+        <button onclick="restart_click()" id="btn_restart">RESTART</button>
+      </div>
+      <div class="camera_mode_div">
+        CAMERA MODE <br><br>
+        <button onclick="eo_click()" id="btn_eo">EO</button>
+        <button onclick="ir_click()" id="btn_ir">IR</button>
+      </div>
+      <div class="record_div">
+        RECORD TO HD
+        <img id = "record_img" src="./media/record.png">
+        <img id = "stop_img"   src="./media/stop.png">
+      </div>
+      <div class="focus_div">
+        FOCUS <br>
+        <button onclick="subtract_focus_click()" id="btn_sub_focus">-</button>
+        <button onclick="add_focus_click()" id="btn_add_focus">+</button>
+        <br>
+        <button onclick="auto_focus_click()" id="btn_auto_focus">AUTO</button>
+      </div>
+    </div>
+
+    <div class="bottom_div">
+      <div class="camera_control_div">
+        CAMERA CONTROL<br>
+        <img id = "inner_left_img" src="./media/left_arrow.png">
+        <img id = "inner_right_img" src="./media/right_arrow.png">
+        <img id = "inner_up_img" src="./media/up_arrow.png">
+        <img id = "inner_down_img" src="./media/down_arrow.png">
+
+        <img id = "outer_left_img" src="./media/left_arrow.png">
+        <img id = "outer_right_img" src="./media/right_arrow.png">
+        <img id = "outer_up_img" src="./media/up_arrow.png">
+        <img id = "outer_down_img" src="./media/down_arrow.png">
+      </div>
+
+      <div class="zoom_div">
+        ZOOM:<br>
+        <button onclick="sub_zoom()" id="btn_sub_zoom">-</button>
+        <button onclick="add_zoom()" id="btn_add_zoom">+</button>
+        <br>
+        <button onclick="reset_zoom_click()" id="btn_reset_zoom">RESET</button>
+      </div>
+
+      <div class="slew_div">
+        SLEW TO TARGET<br>
+        AZ:   <input type="text" id="txt_az" value=0 onchange="txt_az_change(this.value)"><br>
+        EL:   <input type="text" id="txt_el" value=0 onchange="txt_el_change(this.value)"><br>
+        <button onclick="reset_slew_click()" id="btn_reset_slew">RESET</button>
+      </div>
+    </div>
+
+    <div class="zippermast_control">
+      <button onclick="zm_down()" id="zm_down">ZM DOWN</button>
+      <button onclick="zm_up()" id="zm_up">ZM UP</button>
+      <button onclick="camera_on()" id="camera_on">CAMERA ON</button>
+      <button onclick="camera_off()" id="camera_off">CAMERA OFF</button>
+    </div>
+
+    <div id="recording_notification">
+      RECORDING
+    </div>
+  </div>
+</body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./client_js/jquery.min.js"></script>
+  
+  <script src="./client_js/init.js"></script> 
+  <script src="./client_js/left_div.js"></script>
+  <script src="./client_js/right_div.js"></script>
+  <script src="./client_js/data_received.js"></script>
+  <script src="./client_js/zipper.js"></script>
+</html>

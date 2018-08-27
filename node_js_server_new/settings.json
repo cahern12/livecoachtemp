@@ -1,0 +1,12 @@
+{
+    "server_port": "5000",
+    "avr_port": "/dev/ttyUSB1",
+    "avr_baud": "9600",
+    "i2c_address" : "0x19",
+    "i2c_device" : "/dev/i2c-2",
+    "camera_port": "/dev/ttyUSB0",
+    "camera_baud": "19200",
+    "available_ips" : [
+        "192.168.x.xxx"
+    ]
+}
